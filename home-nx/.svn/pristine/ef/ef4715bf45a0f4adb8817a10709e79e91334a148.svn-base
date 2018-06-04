@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>个人中心</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		<link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css" />
+		<link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+	</head>
+	<style type="text/css">
+		.qyyh {
+			margin-top: 20px;
+		}
+		
+		.form-i {
+			/*width: 350px;*/
+			margin-left: 120px;
+			margin-top: 20px;
+		}
+		
+		.form1 {
+			width: 450px;
+			line-height: 35px;
+		}
+		
+		.form1 input,
+		select {
+			width: 280px;
+			height: 27px;
+			border-radius: 3px;
+			float: right;
+			border: 1px solid #CCCCCC;
+		}
+		
+		.from1 label {
+			float: left;
+			color: #333333 !important;
+		}
+		
+		#for {
+			border-bottom: 1px solid #CCCCCC;
+		}
+		
+		.radio-big {
+			width: 12px;
+			height: 12px;
+		}
+		
+		.form-two {
+			width: 350px;
+		}
+		
+		.form-two span {
+			display: inline-block;
+			margin-left: 140px;
+		}
+		
+		.nav-zxjy2 {
+			height: 100%;
+		}
+		
+		.form1-san input {
+			width: 60px;
+			height: 30px;
+			border: none;
+			margin-left: 80px;
+			border-radius: 5px;
+		}
+		
+		.form1-san input:nth-child(1) {
+			background: #C8000B;
+			color: #FFFFFF;
+		}
+		
+		.ipnoes {
+			text-align: center;
+			margin-top: 50px;
+			font-size: 16px;
+			color: #333333;
+		}
+		
+		.for-form {
+			width: 680px;
+		}
+		
+		.for-form span {
+			display: inline-block;
+		}
+		
+		.for-form span:first-of-type {
+			margin-left: 40px;
+		}
+		
+		.for-form select {
+			width: 90px;
+		}
+		
+		.checkboxed {
+			width:100%;
+		}
+		.span-check{
+			float: right;
+		}
+		.checkboxed input {
+			width: 15px;
+			height: 15px;
+			float: left;
+			margin-top: 10px;
+		}
+		
+		.checkboxed span {
+			/*float: left;*/
+			display: inline-block;
+			margin-right: 16px;
+			margin-top: -5px;
+			font-size: 14px;
+		}
+		
+		.se {
+			width: 280px;
+		}
+		
+		textarea {
+			resize: none;
+		}
+	</style>
+
+	<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=53oVIOgmSIejwV7EfphPgTynOZbIiVYu&services=&t=20180420162325"></script>
+
+	<body>
+		<!--顶部-->
+		<div class=" top">
+			<div class="container">
+				<ul class="row pull-right top-ul">
+					<li class="col-sm-4 col-sm-offset-3 text-right top-li loging">
+						<span class="text-red" onmouseover="display()">
+                    登陆
+                <div class="sign" id="sign" onmouseout="disappear()">
+					<form class="form-horizontal">
+						<div class="form-group">
+							<div class="col-sm-12">
+								<input type="email" class="form-control" id="inputEmail3" placeholder="账号">
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-sm-12">
+								<input type="password" class="form-control" id="inputPassword3" placeholder="密码">
+							</div>
+						</div>
+
+						<div class="form-group">
+							<div class="col-sm-12">
+								<a class="btn btn-default" href="#" style="color: #fff;width: 100%;background-color:#c8000b;">登录</a>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class=" col-sm-10">
+								<div class="checkbox" style="color: rgb(179,179,179);">
+									忘记密码?
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+                </span>
+					</li>
+					<li class="col-sm-4 text-right top-li">
+						<span class="weixin"></span> 官方微信
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--主体-->
+		<div class="zong">
+			<!--头-->
+			<div class="header">
+				<div class="container">
+					<div class="header-l pull-left">
+						<img src="img/logo.png">
+					</div>
+
+				</div>
+			</div>
+			<!--导航-->
+			<!--导航-->
+
+			<!--新闻动态-->
+			<div class="center">
+				<!--内容-->
+				<div class=" nav-zxjy1 nav-zxjy2">
+					<p class="p_nav">企业用户<span style="color: #c8000b;">个人中心</span></p>
+					<div class="xian-zxjy">
+						<div class="xian_d">
+						</div>
+					</div>
+					<div class="qyyh">
+						<form action="" method="post" id="for">
+							<div class="form-i">
+								<div class="form1">
+									<label>所属城市:</label>
+									<select name="">
+										<option value=""></option>
+									</select>
+								</div>
+
+								<div class="from-i">
+									<div class="form1">
+										<label>主体类型:</label>
+										<select name="queryType" class="se" id="select1">
+											<option value="1">贫困户备案</option>
+											<option value="2">企业备案</option>
+											<option value="3">自然人责任主体备案</option>
+										</select>
+									</div>
+
+								</div>
+							</div>
+
+						</form>
+					</div>
+					<div id="div1" class="form-i" style="display: block;">
+						<form class="form-inline">
+							<div class="form1">
+								<label>所属地区编码:</label>
+								<input type="text" name="" id="" value="" style="outline: none;border: none;text-align: center;" />
+							</div>
+							<div class="form1">
+								<label>省（自治区、直辖市）:</label>
+								<select name="">
+									<option value=""></option>
+								</select>
+							</div>
+							<div class="form1">
+								<label>市（盟、州）:</label>
+								<select name="">
+									<option value=""></option>
+								</select>
+							</div>
+							<div class="form1">
+								<label>县(市、区、旗):</label>
+								<select name="">
+									<option value=""></option>
+								</select>
+							</div>
+							<div class="form1">
+								<label>镇(乡):</label>
+								<select name="">
+									<option value=""></option>
+								</select>
+							</div>
+							<div class="form1">
+								<label>行政村:</label>
+								<select name="">
+									<option value=""></option>
+								</select>
+							</div>
+							<div class="form1">
+								<label>户编号:</label>
+								<input type="text" name="" id="" value="" />
+							</div>
+							<div class="form1">
+								<label>人编号:</label>
+								<input type="text" name="" id="" value="" />
+							</div>
+							<div class="form1">
+								<label>姓名:</label>
+								<input type="text" name="" id="" value="" />
+							</div>
+
+							<div class="form-two">
+								<label>性别:</label>
+								<span>
+									<input type="radio" class="radio-big">男
+								     <input type="radio" class="radio-big">女
+								</span>
+
+							</div>
+							<div class="form1">
+								<label>证件号码:</label>
+								<input type="text" name="" id="" value="" />
+							</div>
+							<div class="form1">
+								<label>人数:</label>
+								<input type="text" name="" id="" value="" />
+							</div>
+							<div class="form1">
+								<label>与户主关系:</label>
+								<select name="">
+									<option value=""></option>
+								</select>
+							</div>
+							<div class="form1">
+								<label>民族:</label>
+								<select name="">
+									<option value=""></option>
+								</select>
+							</div>
+							<div class="form1">
+								<label>文化程度:</label>
+								<select name="">
+									<option value=""></option>
+								</select>
+							</div>
+							<div class="form-two">
+								<label>在校生状况:</label>
+								<span>
+									<input type="radio" class="radio-big">是
+								     <input type="radio" class="radio-big">否
+								</span>
+
+							</div>
+							<div class="form1">
+								<label>健康状况:</label>
+								<select name="">
+									<option value=""></option>
+								</select>
+							</div>
+							<div class="form1">
+								<label>劳动能力（劳动技能）:</label>
+								<select name="">
+									<option value=""></option>
+								</select>
+							</div>
+							<div class="form1">
+								<label>务工状况:</label>
+								<select name="">
+									<option value=""></option>
+								</select>
+							</div>
+							<div class="form1">
+								<label>务工时间（月）:</label>
+								<input type="text" name="" id="" value="" />
+							</div>
+							<div class="form1">
+								<label>是否参加新农合:</label>
+								<select name="">
+									<option value=""></option>
+								</select>
+							</div>
+							<div class="form1">
+								<label>是否参加新型养老保险:</label>
+								<select name="">
+									<option value=""></option>
+								</select>
+							</div>
+							<div class="form1">
+								<label>是否参加基本养老保险:</label>
+								<select name="">
+									<option value=""></option>
+								</select>
+							</div>
+							<div class="form1">
+								<label>脱贫属性:</label>
+								<select name="">
+									<option value=""></option>
+								</select>
+							</div>
+							<div class="form1">
+								<label>贫困户属性:</label>
+								<select name="">
+									<option value=""></option>
+								</select>
+							</div>
+							<div class="form1">
+								<label>主要致贫原因:</label>
+								<select name="">
+									<option value=""></option>
+								</select>
+							</div>
+							<div class="form1">
+								<label>人均纯收入:</label>
+								<input type="text" name="" id="" value="请输入精确两位小数的金额" />
+							</div>
+							<div class="form1">
+								<label>联系电话:</label>
+								<input type="text" name="" id="" value="请输入开户银行名称" />
+							</div>
+							<div class="form1">
+								<label>扶贫登记银行卡号:</label>
+								<input type="text" name="" id="" value="请输入银行卡号" />
+							</div>
+							<div class="form1">
+								<label>备案日期:</label>
+								<input type="text" name="" id="" value="" style="outline: none;border: none;text-align: center;" />
+							</div>
+							<div class="form1-san" style="margin-top: 100px;float: right;">
+								<input type="button" id="" value="确定" />
+								<input type="button" id="" value="取消" />
+							</div>
+						</form>
+						<div style="clear: both;"></div>
+						<form class="form-inline" style="border-top:1px solid #CCCCCC; width: 1000px; margin:20px auto; ;">
+							<div class="form1" style="margin-top: 20px;">
+								<label>审核结果:</label>
+								<input type="text" name="" id="" value="未通过" style="outline: none;border: none;" />
+							</div>
+							<div class="form1" style="overflow: hidden;margin-top: 20px;">
+								<label style="float: left;">原因:</label>
+								<textarea name="" rows="4" cols="46" spellcheck="" style="float: right;"></textarea>
+							</div>
+
+						</form>
+						<form class="form-inline" style="border-top:1px solid #CCCCCC; width: 1000px; margin:20px auto; ;">
+							<div class="form1" style="margin-top: 20px;">
+								<label>接口访问权限:</label>
+								<input type="text" name="" id="" value="" />
+							</div>
+							<p class="ipnoes">如需帮助请拨打：13000000000</p>
+
+						</form>
+					</div>
+					<div id="div2" class="form-i" style="display: none;">
+						<form class="form-inline">
+							<div class="form1">
+								<label>所属地区编码:</label>
+								<input type="text" name="" id="" value="" style="outline: none;border: none;text-align: center;" />
+							</div>
+							<div class="form1">
+								<label>统一社会信用代码:</label>
+								<input type="text" name="" id="" value="" />
+							</div>
+							<div class="form1">
+								<label>法人责任主体名称:</label>
+								<input type="text" name="" id="" value="" />
+							</div>
+							<div class="form1">
+								<label>法人责任主体类型:</label>
+								<select name="">
+									<option value=""></option>
+								</select>
+							</div>
+							<div class="form1">
+								<label>法人代表姓名:</label>
+								<input type="text" name="" id="" value="" />
+							</div>
+							<div class="form1">
+								<label>法人身份证号码:</label>
+								<input type="text" name="" id="" value="" />
+							</div>
+							<div class="form1">
+								<label>注册日期:</label>
+								<input id="plantStartTime1" placeholder="" type="text" class="form-control plantTime" style="width: 280px;" />
+							</div>
+							<div class="form1">
+								<label>证照有效期:</label>
+								<input id="plantEndTime1" placeholder="" type="text" class="form-control plantTime" style="width: 280px;" />
+							</div>
+							<div class=" for-form">
+								<label>所属地区名称:</label>
+								<span>省：
+								   <select name="">
+									    <option value=""></option>
+								    </select>
+								</span>
+								<span>市：
+								   <select name="">
+									<option value=""></option>
+								    </select>
+								</span>
+								<span>县：
+								   <select name="">
+									<option value=""></option>
+								    </select>
+								</span>
+							</div>
+							<div class="form1">
+								<label>所属地区编码:</label>
+								<input type="text" name="" id="" value="" style="outline: none;border: none;text-align: center;" />
+							</div>
+							<div class="form1">
+								<label>所属企业名称:</label>
+								<input type="text" name="" id="" value="" />
+
+							</div>
+							<div class="form1">
+								<label>所属企业编码:</label>
+								<input type="text" name="" id="" value="" />
+							</div>
+							<div class="form1 checkboxed">
+								<label>企业分类:</label>
+								<div class="span-check">
+									<span>电商平台<input type="checkbox" name="" id="" value="" /></span>
+									<span>团体消费<input type="checkbox" name="" id="" value="" /></span>
+									<span>超市<input type="checkbox" name="" id="" value="" /></span>
+									<span>零售市场<input type="checkbox" name="" id="" value="" /></span>
+									<span>批发市场<input type="checkbox" name="" id="" value="" /></span>
+									<span>屠宰<input type="checkbox" name="" id="" value="" /></span>
+									<span>物流<input type="checkbox" name="" id="" value="" /></span>
+									<span>生产加工<input type="checkbox" name="" id="" value="" /></span>
+									<span>养殖<input type="checkbox" name="" id="" value="" /></span>
+									<span>种植<input type="checkbox" name="" id="" value="" /></span>
+								</div>
+
+							</div>
+							<div class="form1">
+								<label>地块面积:</label>
+								<input type="text" name="" id="" value="" />
+							</div>
+							<div class="form1">
+								<label>备案日期</label>
+								<input type="text" name="" id="" value="" style="outline: none;border: none;text-align: center;" />
+							</div>
+							<div class="form1">
+								<label>经营地址GPS经度</label>
+								<input type="text" name="" id="" value="" style="outline: none;border: none;text-align: center;" />
+							</div>
+							<div class="form1">
+								<label>经营地址GPS纬度</label>
+								<input type="text" name="" id="" value="" style="outline: none;border: none;text-align: center;" />
+							</div>
+
+							<div style="width:640px;height:320px;border:#ccc solid 1px;" id="dituContent"></div>
+							<div class="form1" style="overflow: hidden;margin-top: 20px;">
+								<label style="float: left;">经营地址</label>
+								<textarea name="" rows="4" cols="46" spellcheck="" style="float: right;"></textarea>
+							</div>
+							<div class="form1" style="overflow: hidden;margin-top: 20px;">
+								<label style="float: left;">企业简介</label>
+								<textarea name="" rows="4" cols="46" spellcheck="" style="float: right;"></textarea>
+							</div>
+
+							<div class="form1-san" style="margin-top: 100px;float: right;">
+								<input type="button" id="" value="确定" />
+								<input type="button" id="" value="取消" />
+							</div>
+						</form>
+						<div style="clear: both;"></div>
+						<form class="form-inline" style="border-top:1px solid #CCCCCC; width: 1000px; margin:20px auto; ;">
+							<div class="form1" style="margin-top: 20px;">
+								<label>审核结果:</label>
+								<input type="text" name="" id="" value="未通过" style="outline: none;border: none;" />
+							</div>
+
+							<div class="form1" style="overflow: hidden;margin-top: 20px;">
+								<label style="float: left;">原因:</label>
+								<textarea name="" rows="4" cols="46" spellcheck="" style="float: right;"></textarea>
+							</div>
+
+						</form>
+						<form class="form-inline" style="border-top:1px solid #CCCCCC; width: 1000px; margin:20px auto; ;">
+							<div class="form1" style="margin-top: 20px;">
+								<label>接口访问权限:</label>
+								<input type="text" name="" id="" value="" />
+							</div>
+							<p class="ipnoes">如需帮助请拨打：13000000000</p>
+
+						</form>
+					</div>
+					<div id="div3" class="form-i" style="display: none;">
+						<form class="form-inline">
+							<div class="form1">
+								<label>城市编码:</label>
+								<input type="text" name="" id="" value="" style="outline: none;border: none;text-align: center;" />
+							</div>
+
+							<div class="form1">
+								<label>自然人责任主体编码</label>
+								<input type="text" name="" id="" value="" />
+							</div>
+							<div class="form1">
+								<label>自然人责任主体姓名</label>
+								<input type="text" name="" id="" value="" />
+							</div>
+							<div class=" for-form">
+								<label>所属地区名称:</label>
+								<span>省：
+								   <select name="">
+									    <option value=""></option>
+								    </select>
+								</span>
+								<span>市：
+								   <select name="">
+									<option value=""></option>
+								    </select>
+								</span>
+								<span>县：
+								   <select name="">
+									<option value=""></option>
+								    </select>
+								</span>
+							</div>
+							<div class="form1" style="margin-top: 15px;">
+								<label>所属地区编码:</label>
+								<input type="text" name="" id="" value="" style="outline: none;border: none;text-align: center;" />
+							</div>
+							<div class="form1">
+								<label>所属企业名称</label>
+								<select name="">
+									<option value=""></option>
+								</select>
+							</div>
+							<div class="form1">
+								<label>所属企业编码</label>
+								<input type="text" name="" id="" value="" />
+							</div>
+							<div class="form1">
+								<label>通讯地址</label>
+								<input type="text" name="" id="" value="" />
+							</div>
+							<div class="form1">
+								<label>联系人</label>
+								<input type="text" name="" id="" value="" />
+							</div>
+							<div class="form1">
+								<label>联系电话</label>
+								<input type="text" name="" id="" value="" />
+							</div>
+							<div class="form1">
+								<label>传真</label>
+								<input type="text" name="" id="" value="" />
+							</div>
+							<div class="form1">
+								<label>备案日期</label>
+								<input type="text" name="" id="" value="" style="outline: none;border: none;text-align: center;" />
+							</div>
+							<div class="form1-san" style="float: right;">
+								<input type="button" id="" value="确定" />
+								<input type="button" id="" value="取消" />
+							</div>
+						</form>
+						<div style="clear: both;"></div>
+						<form class="form-inline" style="border-top:1px solid #CCCCCC; width: 1000px; margin:20px auto; ;">
+							<div class="form1" style="margin-top: 20px;">
+								<label>审核结果:</label>
+								<input type="text" name="" id="" value="未通过" style="outline: none;border: none;" />
+							</div>
+							<div class="form1" style="overflow: hidden;margin-top: 20px;">
+								<label style="float: left;">原因:</label>
+								<textarea name="" rows="4" cols="46" spellcheck="" style="float: right;"></textarea>
+							</div>
+
+						</form>
+						<form class="form-inline" style="border-top:1px solid #CCCCCC; width: 1000px; margin:20px auto; ;">
+							<div class="form1" style="margin-top: 20px;">
+								<label>接口访问权限:</label>
+								<input type="text" name="" id="" value="" />
+							</div>
+							<p class="ipnoes">如需帮助请拨打：13000000000</p>
+						</form>
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+		<!--底部-->
+
+		<div class="footer" style="margin-top: 100px;">
+
+			<span>版权所有：宁夏回族自治区商务厅| 技术支持：中商流通生产力促进中心有限公司</span>
+		</div>
+		<!--在线帮助-->
+	</body>
+	<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/jquery-ui.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/my-calendar.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		var select1 = document.getElementById('select1');
+		select1.onchange = function() {
+			if(this.value == '1') {
+				document.getElementById('div1').style.display = 'block';
+				document.getElementById('div2').style.display = 'none';
+				document.getElementById('div3').style.display = 'none';
+
+			} else if(this.value == '2') {
+				document.getElementById('div2').style.display = 'block';
+				document.getElementById('div1').style.display = 'none';
+				document.getElementById('div3').style.display = 'none';
+			} else if(this.value == '3') {
+				document.getElementById('div3').style.display = 'block';
+				document.getElementById('div1').style.display = 'none';
+				document.getElementById('div2').style.display = 'none';
+			}
+
+		}
+	</script>
+	<script type="text/javascript">
+		//创建和初始化地图函数：
+		function initMap() {
+			createMap(); //创建地图
+			setMapEvent(); //设置地图事件
+			addMapControl(); //向地图添加控件
+		}
+
+		//创建地图函数：
+		function createMap() {
+			var map = new BMap.Map("dituContent"); //在百度地图容器中创建一个地图
+			var point = new BMap.Point(106.265607, 38.476878); //定义一个中心点坐标
+			map.centerAndZoom(point, 12); //设定地图的中心点和坐标并将地图显示在地图容器中
+			window.map = map; //将map变量存储在全局
+		}
+
+		//地图事件设置函数：
+		function setMapEvent() {
+			map.enableDragging(); //启用地图拖拽事件，默认启用(可不写)
+			map.enableScrollWheelZoom(); //启用地图滚轮放大缩小
+			map.enableDoubleClickZoom(); //启用鼠标双击放大，默认启用(可不写)
+			map.enableKeyboard(); //启用键盘上下左右键移动地图
+		}
+
+		//地图控件添加函数：
+		function addMapControl() {
+			//向地图中添加缩放控件
+			var ctrl_nav = new BMap.NavigationControl({
+				anchor: BMAP_ANCHOR_TOP_LEFT,
+				type: BMAP_NAVIGATION_CONTROL_LARGE
+			});
+			map.addControl(ctrl_nav);
+			//向地图中添加缩略图控件
+			var ctrl_ove = new BMap.OverviewMapControl({
+				anchor: BMAP_ANCHOR_BOTTOM_RIGHT,
+				isOpen: 1
+			});
+			map.addControl(ctrl_ove);
+			//向地图中添加比例尺控件
+			var ctrl_sca = new BMap.ScaleControl({
+				anchor: BMAP_ANCHOR_BOTTOM_LEFT
+			});
+			map.addControl(ctrl_sca);
+		}
+
+		initMap(); //创建和初始化地图
+	</script>
+
+</html>

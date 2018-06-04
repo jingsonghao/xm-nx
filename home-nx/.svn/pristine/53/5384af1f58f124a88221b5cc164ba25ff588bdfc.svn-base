@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=0.3" />
+		<title>追溯企业介绍</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/main2.css" />
+		<link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	</head>
+
+	<body>
+	
+	<div class=" top">
+		<div class="container">
+			<ul class="row pull-right top-ul">
+				<li class="col-sm-4 col-sm-offset-3 text-right top-li loging">
+						<span class="text-red" onmouseover="display()">
+                    登陆
+                <div class="sign" id="sign" onmouseout="disappear()">
+					<form class="form-horizontal">
+						<div class="form-group">
+							<div class="col-sm-12">
+								<input type="email" class="form-control" id="inputEmail3" placeholder="账号">
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-sm-12">
+								<input type="password" class="form-control" id="inputPassword3" placeholder="密码">
+							</div>
+						</div>
+
+						<div class="form-group">
+							<div class="col-sm-12">
+								<a class="btn btn-default" href="#" style="color: #fff;width: 100%;background-color:#c8000b;">登录</a>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class=" col-sm-10">
+								<div class="checkbox" style="color: rgb(179,179,179);">
+									忘记密码?
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+                </span>
+				</li>
+				<li class="col-sm-4 text-right top-li" >
+					<span class="weixin"></span> 官方微信
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!--主体-->
+	<!--头-->
+	<div class="header">
+		<div class="container">
+			<div class="header-l pull-left">
+				<img src="img/logo.png">
+			</div>
+			<div class="header-r pull-right">
+				<input type="text" placeholder="搜索">
+			</div>
+		</div>
+	</div>
+	<!--导航-->
+	<!--导航-->	
+				<div class="m-nav clearfix ">
+					<ul class="container">
+						<li class="pull-left">
+							<a  href="index.html">
+								<i class="fa fa-home"></i>
+								<span>首页</span>
+							</a>
+						</li>
+						<li class="pull-left">
+							<a href="Traceability.html">
+								<i class="fa fa-compass"></i>
+								<span>追溯动态</span>
+							</a>
+						</li>
+						<li class="pull-left">
+							<a href="ch.html">
+								<i class="fa fa-bank "></i>
+								<span>地市专题</span>
+
+							</a>
+						</li>
+						<li class="pull-left">
+							<a href="Characteristic.html">
+								<i class=" fa fa-file-text-o"></i>
+								<span>特色产品</span>
+
+							</a>
+						</li>
+						<li class="pull-left">
+							<a href="Povertyalleviation.html">
+								<i class="fa fa-clipboard" ></i>
+								<span>精准扶贫</span>
+
+							</a>
+						</li>
+						<li class="pull-left">
+							<a href="Publicservice.html">
+								<i class=" fa fa-envelope-o"></i>
+								<span>公众服务</span>
+
+							</a>
+						</li>
+
+					</ul>
+				</div>
+		<div class="g-header container">
+			<p>您现在的位置：追溯企业>追溯企业介绍</p>
+		</div>
+		
+		<div class="xw-header container">
+			<div class="clearfix row">
+				<div class="col-md-3 clearfix-img">
+					<img src="img/5_33.png" class="center-block" style="margin-top: 15%">
+				</div>
+				<div class="col-md-9">
+					<div class="h3 h3-cl">莱芜市嬴泰有机农业科技发展有限公司</div>
+					<div class="xw-p">
+						<span>地址：山东省莱芜市莱城工业区口镇太平村南</span>
+					</div>
+				</div>
+			</div>
+			<div class="xw-word-box">
+				<p>莱芜市嬴泰有机农业科技发展有限公司成立于2004年，注册资金103万元，现有员工36人，其中具有大专以上学历人员6人。是一家集生态养殖、有机种植、产品 加工销售、技术推广服务于一体的现代农业龙头企业。 </p>
+				<p>公司位于莱芜市口镇太平村南汇合大道路边，交通便利。自成立以来，以发展有机立体循环农业为目标，以助农增收增效为已任，先后成立了莱芜市莱城区口镇 樱桃种植专业合作社、莱芜市有机樱桃协会、莱芜市草莓研究所，为社员提供高品质种羊、种苗（樱桃苗、草莓苗）及技术推广服务等，大力推广生态养殖、有 机种植立体循环模式。</p>
+				<p>公司不断加强与山东农业大学、青岛农业大学等大专院校合作，努力研发新品种、开发新技术，产品质量不断提升，得到了社会的广泛认可。2008年，公司基地经过中绿华夏绿色食品认证，成为莱芜市第一家有机食品生产基地。2010年，经国家工商行政管理局注册“嬴泰”商标。公司先后被评为全国科普兴农村先进单位、莱芜市农业产业化市级龙头企业、全市生态循环农业示范单位，樱桃专业社被评为市级示范社、示范基地被作为《鲁中晨刊》小记者采风实践基地，2013年，养殖场区被评为国家级畜禽养殖标准示范场。公司不断加强与山东农业大学、青岛农业大学等大专院校合作，努力研发新品种、开发新技术，产品质量不断提升，得到了社会的广泛认可。2008年，公司基地经过中绿华夏绿色食品认证，成为莱芜市第一家有机食品生产基地。2010年，经国家工商行政管理局注册“嬴泰”商标。公司先后被评为全国科普兴农村先进单位、莱芜市农业产业化市级龙头企业、全市生态循环农业示范单位，樱桃专业社被评为市级示范社、示范基地被作为《鲁中晨刊》小记者采风实践基地，2013年，养殖场区被评为国家级畜禽养殖标准示范场。</p>
+				<p>莱芜市嬴泰有机农业科技发展有限公司成立于2004年，注册资金103万元，现有员工36人，其中具有大专以上学历人员6人。是一家集生态养殖、有机种植、产品 加工销售、技术推广服务于一体的现代农业龙头企业。 </p>
+			</div>
+		</div>
+		
+		
+		<!--底部-->
+		<div class="footer" style="margin-top: 270px;">
+
+			<span>版权所有：宁夏回族自治区商务厅  &nbsp;| &nbsp; 技术支持：中商流通生产力促进中心有限公司</span>
+		</div>
+		
+		
+		<!--footer结束-->
+	</body>
+	<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(function(){
+		 $("#da").click(function() {
+			 $(".xw-word-box").css("fontSize", "18px"); 
+		  })
+		  $("#zheng").click(function() {
+			 $(".xw-word-box").css("fontSize", "16px"); 
+		  })
+		  $("#xiao").click(function() {
+			 $(".xw-word-box").css("fontSize", "14px"); 
+		  })
+			
+		})
+	
+	</script>
+
+</html>

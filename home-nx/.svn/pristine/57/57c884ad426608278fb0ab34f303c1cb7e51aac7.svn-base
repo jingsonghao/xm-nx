@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%; overflow: hidden;">
+
+	<head>
+		<meta charset="UTF-8" />
+		<title>登录页</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/main.css"/>
+		<link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+		
+	</head>
+
+	<body style="height: 100%; overflow: hidden;">
+		<div class="login">
+			
+			<div class="login-main">
+				<div class="login-top-text">
+					<div class="login-logo"></div>	
+				</div>
+			</div>
+			<div class="login-box">
+				<div class="control-group">
+					<div class="controls">
+						<label for="email" class="control-label glyphicon glyphicon-user"><img src="img/icon01.png"/></label>
+						<input id="email" type="email" name="email" tabindex="1" autofocus="autofocus" class="form-control input-medium">
+					</div>
+				</div>
+				<div class="control-group">
+					<div class="controls">
+						<label for="password" class="control-label glyphicon glyphicon-lock"><img src="img/icon02.png"/></label>
+						<input id="password" type="password" name="password" tabindex="2" class="form-control input-medium">
+					</div>
+				</div>
+
+				<div class="control-group">
+					<a id="login-to" class="btn btn-block">登 录</a>
+				</div>
+				<a href="" class="wjmm">忘记密码？</a>
+				<div class="cont-zc">
+					<a  href='qyzhuce.html' class="btn lo-1">注册</a>
+					<a class="btn  lo-1">退出</a>
+				</div>
+			</div>
+			
+			<div class="bg-line-img">
+				<img src="img/line.png">
+				<img src="img/line02.png"/>
+			</div>
+		</div>
+		<p class="foot-text"> 宁夏回族自治区重要产品追溯区级管理平台版权所有   宁夏省商务厅技术支持  </p>
+		<p class="foot-text2">中商流通生产力促进中心有限公司 </p>
+	</body>
+	<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	
+	<style>
+
+	</style>
+
+</html>

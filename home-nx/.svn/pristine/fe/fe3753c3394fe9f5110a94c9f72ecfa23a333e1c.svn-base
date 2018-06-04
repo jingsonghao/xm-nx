@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+	<head>
+		<meta charset="UTF-8" />
+		<title>注册</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		<link rel="stylesheet" type="text/css" href="css/verify.css" />
+		<link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+		<style type="text/css">
+			.login-box .control-group{
+				margin-bottom: 18px;
+			}
+			.controls-1 input {
+				padding-left: 14px;
+				height: 40px;
+				border: 1px solid #CCCCCC;
+			}
+			
+			.controls-2 input {
+				width: 50%;
+				height: 40px;
+			}
+			
+			.input1 {
+				float: left;
+			}
+			
+			.input2 {
+				width: 20% !important;
+				height: 20px !important;
+				float: right;
+				margin-top: -33px;
+				border-radius: 3px;
+				color: #CCCCCC;
+				line-height: 0px;
+				background: #fefdf4;
+				border: 1px solid #CCCCCC;
+				margin-right: 36%;
+			}
+			
+			
+			
+			.yzmlogin {
+				width: 100%;
+				height: 40px;
+			}
+			.control-gr{
+				width: 100%;
+				
+			}
+			
+			
+			.controls-3 input{
+				width: 245px;
+				height: 40px;
+			}
+			.lo-1:nth-child(1){
+				left: 35%;
+			}
+			.verify-code{
+				    margin-right: 5%;
+			}
+			
+		</style>
+	</head>
+
+	<body >
+		<div class="login">
+
+			<div class="login-main">-
+				<div class="login-top-text">
+					<div class="login-logo"></div>
+				</div>
+			</div>
+			<div class="login-box">
+
+				<div class="control-group">
+					<div class="controls controls-1">
+
+						<input type="text" tabindex="1" autofocus="autofocus" class="form-control input-medium" placeholder="请输入唯一社会信用代码">
+					</div>
+				</div>
+				<div class="control-group">
+					<div class="controls controls-1">
+
+						<input type="text" tabindex="1" autofocus="autofocus" class="form-control input-medium" placeholder="请输入唯一企业名称">
+					</div>
+				</div>
+				<div class="control-group">
+					<div class="controls controls-1">
+
+						<input type="text" tabindex="1" autofocus="autofocus" class="form-control input-medium" placeholder="请输入常用手机号（账号登录）">
+					</div>
+				</div>
+				<div class="control-group">
+					<div class="controls controls-1">
+
+						<input type="text" tabindex="1" autofocus="autofocus" class="form-control input-medium" placeholder="请输入登录账号">
+					</div>
+				</div>
+				<div class="control-gr row">
+					<div class="control-group controls-3 col-md-6">
+						<div class="controls ">
+
+							<input type="text" tabindex="1" autofocus="autofocus" class="form-control input-medium" placeholder="请输入登录密码">
+						</div>
+					</div>
+					<div class="control-group controls-3 col-md-6">
+						<div class="controls ">
+
+							<input type="text" tabindex="1" autofocus="autofocus" class="form-control input-medium" placeholder="请确认密码">
+						</div>
+					</div>
+				</div>
+
+				<div class="control-group">
+					<div class="controls controls-1 controls-2">
+						<div class="yzmlogin">
+							<div id="mpanel2">
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="cont-zc">
+					<a class="btn lo-1">注册</a>
+
+				</div>
+			</div>
+			<div class="bg-line-img">
+				<img src="img/line.png">
+				<img src="img/line02.png" />
+			</div>
+		</div>
+		<div class="footer-box">
+			<p class="foot-text"> 宁夏回族自治区重要产品追溯区级管理平台版权所有 宁夏省商务厅技术支持 </p>
+		    <p class="foot-text2">中商流通生产力促进中心有限公司 </p>
+		</div>
+		
+	</body>
+	<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/verify.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$('#mpanel2').codeVerify({
+			type: 1,
+			width: '90%',
+			height: '40px',
+			fontSize: '18px',
+			codeLength: 6,
+			btnId: 'check-btn',
+			ready: function() {},
+			success: function() {
+				alert('验证匹配！');
+			},
+			error: function() {
+				alert('验证码不匹配！');
+			}
+		});
+	</script>
+
+</html>

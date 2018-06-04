@@ -1,0 +1,143 @@
+#map {
+	height: 570px;
+	background: url(../img/b-bg.png) no-repeat;
+	position: relative;
+}
+
+.map-red {
+	position: absolute;
+	left: 189px;
+	top: 28px;
+}
+
+.map-red img{
+	transition: all .5s;
+	opacity: 0;
+/*	background: transparent;*/
+	/*-moz-box-shadow: 2px 2px 5px #333333;
+	-webkit-box-shadow: 2px 2px 5px #333333;
+	box-shadow: 2px 2px 5px #333333;*/
+}
+
+.map-red:hover img{
+	opacity: 1;
+}
+.map-red:nth-child(1){
+	position: absolute;
+	left: 183px;
+    top: 19px;
+}
+.map-red:nth-child(2){
+	position: absolute;
+	left: 214px;
+    top: 7px;
+}
+.map-red:nth-child(3){
+	position: absolute;
+	left: 171px;
+    top: 39px;
+}
+.map-red:nth-child(4){
+	position: absolute;
+	left: 159px;
+    top: 61px;
+}
+.map-red:nth-child(5){
+	position: absolute;
+	left: 154px;
+    top: 82px;
+}
+.map-red:nth-child(6){
+	position: absolute;
+	left: 211px;
+    top: 38px;
+}
+.map-red:nth-child(7){
+	position: absolute;
+	left: 153px;
+    top: 114px;
+}
+.map-red:nth-child(8){
+	position: absolute;
+	left: 129px;
+    top: 136px;
+}
+.map-red:nth-child(9){
+	position: absolute;
+	left: 172px;
+    top: 160px;
+}
+.map-red:nth-child(10){
+	position: absolute;
+	left: 118px;
+    top: 196px;
+}
+.map-red:nth-child(11){
+	position: absolute;
+	left: 8px;
+    top: 198px;
+}
+.map-red:nth-child(12){
+	position: absolute;
+	left: 100px;
+    top: 219px;
+}
+.map-red:nth-child(13){
+	position: absolute;
+	left: 88px;
+    top: 271px;
+}
+.map-red:nth-child(14){
+	position: absolute;
+	left: 165px;
+    top: 326px;
+}
+.map-red:nth-child(15){
+	position: absolute;
+	left: 102px;
+    top: 376px;
+}
+.map-red:nth-child(16){
+	position: absolute;
+	left: 195px;
+    top: 363px;
+}
+.map-red:nth-child(17){
+	position: absolute;
+	left: 151px;
+    top: 427px;
+}
+.map-red:nth-child(18){
+	position: absolute;
+	left: 191px;
+    top: 441px;
+}
+.map-red:nth-child(19){
+	position: absolute;
+	left: 218px;
+    top: 150px;
+}
+.map-red:nth-child(20){
+	position: absolute;
+	left: 188px;
+    top: 123px;
+}
+.line-map{
+	height: 2px;
+	border:1px dashed #C50009 ;
+	position: absolute;
+	width: 157px;
+    left: -174px;
+    top: 20px;
+}
+.line-zws{
+	left: 305px !important;
+}
+.line-sj{
+	width: 250px;
+	position:absolute ;
+	display: none;
+	left: 220px;
+	top: 17px;
+	transition: all 2s; 
+}

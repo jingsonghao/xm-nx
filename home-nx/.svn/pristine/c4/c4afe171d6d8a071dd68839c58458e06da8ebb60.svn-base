@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>城市专题</title>
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		<link rel="stylesheet" type="text/css" href="css/number-pb.css" />
+		<link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.velocity.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/number-pb.js" type="text/javascript" charset="utf-8"></script>
+		<script src=".js/topred.js"></script>
+	</head>
+	<body>
+		<!--顶部-->
+		<div class=" top">
+			<div class="container">
+				<ul class="row pull-right top-ul">
+					<li class="col-sm-4 col-sm-offset-3 text-right top-li loging">
+						<span class="text-red" onmouseover="display()">
+                    登陆
+                <div class="sign" id="sign" onmouseout="disappear()">
+                    <form class="form-horizontal">
+                        <div class="form-group">
+                            <div class="col-sm-12">
+                                <input type="email" class="form-control" id="inputEmail3" placeholder="账号">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-12">
+                                <input type="password" class="form-control" id="inputPassword3" placeholder="密码">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-sm-12">
+                                <a class="btn btn-default" href="#" style="color: #fff;width: 100%;background-color:#c8000b;">登录</a>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class=" col-sm-10">
+                                <div class="checkbox" style="color: rgb(179,179,179);">
+                                    忘记密码?
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                </span>
+					</li>
+					<li class="col-sm-4 text-right top-li">
+						<span class="weixin"></span> 官方微信
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--头-->
+		<div class="main-top">
+			<div class="header">
+				<div class="container">
+					<div class="header-l pull-left">
+						<img src="img/logo.png">
+					</div>
+					<div class="header-r pull-right">
+						<input type="text" placeholder="搜索">
+					</div>
+				</div>
+			</div>
+			<!--导航-->
+			<!--导航-->
+			<div class="m-nav clearfix ">
+				<ul class="container">
+					<li class="pull-left">
+						<a href="index.html">
+							<i class="fa fa-home"></i>
+							<span>首页</span>
+						</a>
+					</li>
+					<li class="pull-left">
+						<a href="Traceability.html">
+							<i class="fa fa-compass"></i>
+							<span>追溯动态</span>
+						</a>
+					</li>
+					<li class="pull-left">
+						<a href="ch.html">
+							<i class="fa fa-bank "></i>
+							<span>地市专题</span>
+
+						</a>
+					</li>
+					<li class="pull-left">
+						<a href="Characteristic.html">
+							<i class=" fa fa-file-text-o"></i>
+							<span>特色产品</span>
+
+						</a>
+					</li>
+					<li class="pull-left">
+						<a href="Povertyalleviation.html">
+							<i class="fa fa-clipboard"></i>
+							<span>精准扶贫</span>
+
+						</a>
+					</li>
+					<li class="pull-left">
+						<a href="Publicservice.html">
+							<i class=" fa fa-envelope-o"></i>
+							<span>公众服务</span>
+
+						</a>
+					</li>
+
+				</ul>
+			</div>
+			<!--新闻动态-->
+
+			<!--主体-->
+			<div class="zong">
+				<div class="center tab-container">
+					<div class="nav-cszt-1">
+						<p>城市选择：</p>
+						<ul class="nav-cszt-u tab-navi ">
+							<li class="col-yc">银川市</li>
+							<li>固原市</li>
+							<li>石嘴山市</li>
+							<li>吴忠市</li>
+							<li>中卫市</li>
+
+						</ul>
+					</div>
+
+					<!--城市概况-->
+					<div class="nav-zhuti tab-body" style="display: block;">
+						<div class="nav-cszt">
+							<div class="nav_top">
+								<p class="cs">城市<span style="color: #c8000b;">概况</span>
+								</p>
+								<a href="" id="gd">更多 >></a>
+							</div>
+							<div class="xian">
+								<div class="xian_d"></div>
+							</div>
+							<!--地图-->
+							<div class="Dt">
+								<div class="Dt_left-1">
+									<div class="map-ico">
+										<img src="img/grid.png" />
+										<div class="kuang">
+											<img src="img/box11_01.png" /> 银川xxx公司
+										</div>
+									</div>
+									<div class="map-ico">
+										<img src="img/grid.png" />
+										<div class="kuang">
+											<img src="img/box11_01.png" /> 银川xxx公司
+										</div>
+									</div>
+									<div class="map-ico">
+										<img src="img/grid.png" />
+										<div class="kuang">
+											<img src="img/box11_01.png" /> 银川xxx公司
+										</div>
+									</div>
+
+									<div class="map-ico">
+										<img src="img/grid.png" />
+										<div class="kuang">
+											<img src="img/box11_01.png" /> 银川xxx公司
+										</div>
+									</div>
+
+									<img src="img/s-map.png" / class="s-img">
+								</div>
+								<!--特色企业-->
+
+								<div class="Dt_right Dt_right1">
+									<ul>
+										<li class="col">特色企业</li>
+										<li>政策法规</li>
+									</ul>
+									<div class="neirong neirong1" style="display: block;">
+										<p>· 蔬菜零售市场每个环节需要采集哪些...&nbsp; <span> 2017-7-26</span></p>
+										<p>· 我在家家悦超市49门店买到的商品...&nbsp; <span> 2017-7-26</span></p>
+										<p>· 肉类批发的每个环节需要采集哪...&nbsp; <span> 2017-7-26</span></p>
+										<p>· 肉类批发的每个环节需要采集哪...&nbsp; <span> 2017-7-26</span></p>
+										<p>· 肉类批发的每个环节需要采集哪...&nbsp; <span> 2017-7-26</span></p>
+										<p>· 肉类批发的每个环节需要采集哪...&nbsp; <span> 2017-7-26</span></p>
+										<p>· 肉类批发的每个环节需要采集哪...&nbsp; <span> 2017-7-26</span></p>
+										<p>· 肉类批发的每个环节需要采集哪...&nbsp; <span> 2017-7-26</span></p>
+										<p>· 肉类批发的每个环节需要采集哪...&nbsp; <span> 2017-7-26</span></p>
+										<p>· 肉类批发的每个环节需要采集哪...&nbsp; <span> 2017-7-26</span></p>
+										<p>· 肉类批发的每个环节需要采集哪...&nbsp; <span> 2017-7-26</span></p>
+									</div>
+									<div class="neirong neirong1">
+										<p> · 肉类批发的每个环节需要采集哪 ...&nbsp; <span> 2017-7-26</span></p>
+										<p> · 肉类批发的每个环节需要采集哪 ...&nbsp; <span> 2017-7-26</span></p>
+										<p> · 肉类批发的每个环节需要采集哪 ...&nbsp; <span> 2017-7-26</span></p>
+										<p> · 肉类批发的每个环节需要采集哪 ...&nbsp; <span> 2017-7-26</span></p>
+										<p> · 肉类批发的每个环节需要采集哪 ...&nbsp; <span> 2017-7-26</span></p>
+										<p> · 肉类批发的每个环节需要采集哪 ...&nbsp; <span> 2017-7-26</span></p>
+										<p> · 肉类批发的每个环节需要采集哪 ...&nbsp; <span> 2017-7-26</span></p>
+										<p> · 肉类批发的每个环节需要采集哪 ...&nbsp; <span> 2017-7-26</span></p>
+										<p> · 肉类批发的每个环节需要采集哪 ...&nbsp; <span> 2017-7-26</span></p>
+										<p> · 肉类批发的每个环节需要采集哪 ...&nbsp; <span> 2017-7-26</span></p>
+										<p> · 肉类批发的每个环节需要采集哪 ...&nbsp; <span> 2017-7-26</span></p>
+									</div>
+								</div>
+
+							</div>
+						</div>
+						<div class="P_s">
+							<div class="P_sl">
+								<p class="cs">评审<span style="color: #c8000b;">情况</span></p>
+								<div class="xian1">
+									<div class="xian1_d"></div>
+								</div>
+								<div class="Dt_left1">
+									<div class="zi">
+										<div class="pp"></div>
+										<div class="pp1">通过企业数</div>
+										<div class="pp2"></div>
+										<div class="pp3">申报企业数</div>
+									</div>
+									<div class="xiao">
+
+										<div class="container-jdt">
+											<section id="random">
+												<article>
+													<div class="number-pb">
+														<div class="number-pb-shown"></div>
+														<div class="number-pb-num">0%</div>
+													</div>
+												</article>
+											</section>
+										</div>
+
+									</div>
+									<div class="Ps">
+										<p>
+											<a href="">· 蔬菜零售市场每个环节需要采集哪些...<span>2017-7-26</span></a>
+										</p>
+										<p>
+											<a href="">· 蔬菜零售市场每个环节需要采集哪些...<span>2017-7-26</span></a>
+										</p>
+										<p>
+											<a href="">· 蔬菜零售市场每个环节需要采集哪些...<span>2017-7-26</span></a>
+										</p>
+										<p>
+											<a href="">· 蔬菜零售市场每个环节需要采集哪些...<span>2017-7-26</span></a>
+										</p>
+										<p>
+											<a href="">· 蔬菜零售市场每个环节需要采集哪些...<span>2017-7-26</span></a>
+										</p>
+										<p>
+											<a href="">· 蔬菜零售市场每个环节需要采集哪些...<span>2017-7-26</span></a>
+										</p>
+										<p>
+											<a href="">· 蔬菜零售市场每个环节需要采集哪些...<span>2017-7-26</span></a>
+										</p>
+										<p>
+											<a href="">· 蔬菜零售市场每个环节需要采集哪些...<span>2017-7-26</span></a>
+										</p>
+										<p>
+											<a href="">· 蔬菜零售市场每个环节需要采集哪些...<span>2017-7-26</span></a>
+										</p>
+									</div>
+
+								</div>
+
+							</div>
+
+						</div>
+
+					</div>
+					<div class="nav-zhuti tab-body">
+						<div class="nav-cszt">
+							<div class="nav_top">
+								<p class="cs">城市<span style="color: #c8000b;">概况</span>
+								</p>
+								<a href="" id="gd">更多 >></a>
+							</div>
+							<div class="xian">
+								<div class="xian_d"></div>
+							</div>
+							<!--地图-->
+							<div class="Dt">
+								<div class="Dt_left-2">
+									<div class="map-ico-gy">
+										<img src="img/grid.png" />
+										<div class="kuang">
+											<img src="img/box11_01.png" /> 固原xxx公司
+										</div>
+									</div>
+									<div class="map-ico-gy">
+										<img src="img/grid.png" />
+										<div class="kuang">
+											<img src="img/box11_01.png" /> 固原xxx公司
+										</div>
+									</div>
+									<img src="img/s-map.png" / class="s-img">
+								</div>
+								<!--特色企业-->
+								<div class="Dt_right Dt_right2">
+									<ul>
+										<li class="col">特色企业</li>
+										<li>政策法规</li>
+									</ul>
+									<div class="neirong neirong2" style="display: block;">
+										<p>· 蔬菜零售市场每个环节需要采集哪些...&nbsp; <span> 2017-7-26</span></p>
+										<p>· 我在家家悦超市49门店买到的商品...&nbsp; <span> 2017-7-26</span></p>
+										<p>· 肉类批发的每个环节需要采集哪...&nbsp; <span> 2017-7-26</span></p>
+										<p>· 肉类批发的每个环节需要采集哪...&nbsp; <span> 2017-7-26</span></p>
+										<p>· 肉类批发的每个环节需要采集哪...&nbsp; <span> 2017-7-26</span></p>
+										<p>· 肉类批发的每个环节需要采集哪...&nbsp; <span> 2017-7-26</span></p>
+										<p>· 肉类批发的每个环节需要采集哪...&nbsp; <span> 2017-7-26</span></p>
+										<p>· 肉类批发的每个环节需要采集哪...&nbsp; <span> 2017-7-26</span></p>
+										<p>· 肉类批发的每个环节需要采集哪...&nbsp; <span> 2017-7-26</span></p>
+										<p>· 肉类批发的每个环节需要采集哪...&nbsp; <span> 2017-7-26</span></p>
+										<p>· 肉类批发的每个环节需要采集哪...&nbsp; <span> 2017-7-26</span></p>
+									</div>
+									<div class="neirong neirong2">
+										<p> · 肉类批发的每个环节需要采集哪 ...&nbsp; <span> 2017-7-26</span></p>
+										<p> · 肉类批发的每个环节需要采集哪 ...&nbsp; <span> 2017-7-26</span></p>
+										<p> · 肉类批发的每个环节需要采集哪 ...&nbsp; <span> 2017-7-26</span></p>
+										<p> · 肉类批发的每个环节需要采集哪 ...&nbsp; <span> 2017-7-26</span></p>
+										<p> · 肉类批发的每个环节需要采集哪 ...&nbsp; <span> 2017-7-26</span></p>
+										<p> · 肉类批发的每个环节需要采集哪 ...&nbsp; <span> 2017-7-26</span></p>
+										<p> · 肉类批发的每个环节需要采集哪 ...&nbsp; <span> 2017-7-26</span></p>
+										<p> · 肉类批发的每个环节需要采集哪 ...&nbsp; <span> 2017-7-26</span></p>
+										<p> · 肉类批发的每个环节需要采集哪 ...&nbsp; <span> 2017-7-26</span></p>
+										<p> · 肉类批发的每个环节需要采集哪 ...&nbsp; <span> 2017-7-26</span></p>
+										<p> · 肉类批发的每个环节需要采集哪 ...&nbsp; <span> 2017-7-26</span></p>
+									</div>
+								</div>
+							</div>
+
+						</div>
+						<div class="P_s">
+							<div class="P_sl">
+								<p class="cs">评审<span style="color: #c8000b;">情况</span></p>
+								<div class="xian1">
+									<div class="xian1_d"></div>
+								</div>
+								<div class="Dt_left1">
+									<div class="zi">
+										<div class="pp"></div>
+										<div class="pp1">通过企业数</div>
+										<div class="pp2"></div>
+										<div class="pp3">申报企业数</div>
+									</div>
+									<div class="xiao">
+
+										<div class="container-jdt">
+											<section id="random">
+												<article>
+													<div class="number-pb">
+														<div class="number-pb-shown"></div>
+														<div class="number-pb-num">0%</div>
+													</div>
+												</article>
+											</section>
+										</div>
+
+									</div>
+									<div class="Ps">
+										<p>
+											<a href="">· 蔬菜零售市场每个环节需要采集哪些...<span>2017-7-26</span></a>
+										</p>
+										<p>
+											<a href="">· 蔬菜零售市场每个环节需要采集哪些...<span>2017-7-26</span></a>
+										</p>
+										<p>
+											<a href="">· 蔬菜零售市场每个环节需要采集哪些...<span>2017-7-26</span></a>
+										</p>
+										<p>
+											<a href="">· 蔬菜零售市场每个环节需要采集哪些...<span>2017-7-26</span></a>
+										</p>
+										<p>
+											<a href="">· 蔬菜零售市场每个环节需要采集哪些...<span>2017-7-26</span></a>
+										</p>
+										<p>
+											<a href="">· 蔬菜零售市场每个环节需要采集哪些...<span>2017-7-26</span></a>
+										</p>
+										<p>
+											<a href="">· 蔬菜零售市场每个环节需要采集哪些...<span>2017-7-26</span></a>
+										</p>
+										<p>
+											<a href="">· 蔬菜零售市场每个环节需要采集哪些...<span>2017-7-26</span></a>
+										</p>
+										<p>
+											<a href="">· 蔬菜零售市场每个环节需要采集哪些...<span>2017-7-26</span></a>
+										</p>
+									</div>
+
+								</div>
+
+							</div>
+
+						</div>
+
+					</div>
+					<div class="nav-zhuti tab-body">
+						<div class="nav-cszt">
+							<div class="nav_top">
+								<p class="cs">城市<span style="color: #c8000b;">概况</span>
+								</p>
+								<a href="" id="gd">更多 >></a>
+							</div>
+							<div class="xian">
+								<div class="xian_d"></div>
+							</div>
+							<!--地图-->
+							<div class="Dt">
+								<div class="Dt_left-3">
+									<div class="map-ico-szs">
+										<img src="img/grid.png" />
+										<div class="kuang">
+											<img src="img/box11_01.png" /> 石嘴山xxx公司
+										</div>
+									</div>
+									<div class="map-ico-szs">
+										<img src="img/grid.png" />
+										<div class="kuang">
+											<img src="img/box11_01.png" /> 石嘴山xxx公司
+										</div>
+									</div>
+									<img src="img/s-map.png" / class="s-img">
+								</div>
+								<!--特色企业-->
+								<div class="Dt_right Dt_right3">
+									<ul>
+										<li class="col">特色企业</li>
+										<li>政策法规</li>
+									</ul>
+									<div class="neirong neirong3" style="display: block;">
+										<p>· 蔬菜零售市场每个环节需要采集哪些...&nbsp; <span> 2017-7-26</span></p>
+										<p>· 我在家家悦超市49门店买到的商品...&nbsp; <span> 2017-7-26</span></p>
+										<p>· 肉类批发的每个环节需要采集哪...&nbsp; <span> 2017-7-26</span></p>
+										<p>· 肉类批发的每个环节需要采集哪...&nbsp; <span> 2017-7-26</span></p>
+										<p>· 肉类批发的每个环节需要采集哪...&nbsp; <span> 2017-7-26</span></p>
+										<p>· 肉类批发的每个环节需要采集哪...&nbsp; <span> 2017-7-26</span></p>
+										<p>· 肉类批发的每个环节需要采集哪...&nbsp; <span> 2017-7-26</span></p>
+										<p>· 肉类批发的每个环节需要采集哪...&nbsp; <span> 2017-7-26</span></p>
+										<p>· 肉类批发的每个环节需要采集哪...&nbsp; <span> 2017-7-26</span></p>
+										<p>· 肉类批发的每个环节需要采集哪...&nbsp; <span> 2017-7-26</span></p>
+										<p>· 肉类批发的每个环节需要采集哪...&nbsp; <span> 2017-7-26</span></p>
+									</div>
+									<div class="neirong neirong3">
+										<p> · 肉类批发的每个环节需要采集哪 ...&nbsp; <span> 2017-7-26</span></p>
+										<p> · 肉类批发的每个环节需要采集哪 ...&nbsp; <span> 2017-7-26</span></p>
+										<p> · 肉类批发的每个环节需要采集哪 ...&nbsp; <span> 2017-7-26</span></p>
+										<p> · 肉类批发的每个环节需要采集哪 ...&nbsp; <span> 2017-7-26</span></p>
+										<p> · 肉类批发的每个环节需要采集哪 ...&nbsp; <span> 2017-7-26</span></p>
+										<p> · 肉类批发的每个环节需要采集哪 ...&nbsp; <span> 2017-7-26</span></p>
+										<p> · 肉类批发的每个环节需要采集哪 ...&nbsp; <span> 2017-7-26</span></p>
+										<p> · 肉类批发的每个环节需要采集哪 ...&nbsp; <span> 2017-7-26</span></p>
+										<p> · 肉类批发的每个环节需要采集哪 ...&nbsp; <span> 2017-7-26</span></p>
+										<p> · 肉类批发的每个环节需要采集哪 ...&nbsp; <span> 2017-7-26</span></p>
+										<p> · 肉类批发的每个环节需要采集哪 ...&nbsp; <span> 2017-7-26</span></p>
+									</div>
+								</div>
+							</div>
+
+						</div>
+						<div class="P_s">
+							<div class="P_sl">
+								<p class="cs">评审<span style="color: #c8000b;">情况</span></p>
+								<div class="xian1">
+									<div class="xian1_d"></div>
+								</div>
+								<div class="Dt_left1">
+									<div class="zi">
+										<div class="pp"></div>
+										<div class="pp1">通过企业数</div>
+										<div class="pp2"></div>
+										<div class="pp3">申报企业数</div>
+									</div>
+									<div class="xiao">
+
+										<div class="container-jdt">
+											<section id="random">
+												<article>
+													<div class="number-pb">
+														<div class="number-pb-shown"></div>
+														<div class="number-pb-num">0%</div>
+													</div>
+												</article>
+											</section>
+										</div>
+
+									</div>
+									<div class="Ps">
+										<p>
+											<a href="">· 蔬菜零售市场每个环节需要采集哪些...<span>2017-7-26</span></a>
+										</p>
+										<p>
+											<a href="">· 蔬菜零售市场每个环节需要采集哪些...<span>2017-7-26</span></a>
+										</p>
+										<p>
+											<a href="">· 蔬菜零售市场每个环节需要采集哪些...<span>2017-7-26</span></a>
+										</p>
+										<p>
+											<a href="">· 蔬菜零售市场每个环节需要采集哪些...<span>2017-7-26</span></a>
+										</p>
+										<p>
+											<a href="">· 蔬菜零售市场每个环节需要采集哪些...<span>2017-7-26</span></a>
+										</p>
+										<p>
+											<a href="">· 蔬菜零售市场每个环节需要采集哪些...<span>2017-7-26</span></a>
+										</p>
+										<p>
+											<a href="">· 蔬菜零售市场每个环节需要采集哪些...<span>2017-7-26</span></a>
+										</p>
+										<p>
+											<a href="">· 蔬菜零售市场每个环节需要采集哪些...<span>2017-7-26</span></a>
+										</p>
+										<p>
+											<a href="">· 蔬菜零售市场每个环节需要采集哪些...<span>2017-7-26</span></a>
+										</p>
+									</div>
+
+								</div>
+
+							</div>
+
+						</div>
+
+					</div>
+					<div class="nav-zhuti tab-body">
+						<div class="nav-cszt">
+							<div class="nav_top">
+								<p class="cs">城市<span style="color: #c8000b;">概况</span>
+								</p>
+								<a href="" id="gd">更多 >></a>
+							</div>
+							<div class="xian">
+								<div class="xian_d"></div>
+							</div>
+							<!--地图-->
+							<div class="Dt">
+								<div class="Dt_left-4">
+									<div class="map-ico-wzs">
+										<img src="img/grid.png" />
+										<div class="kuang">
+											<img src="img/box11_01.png" /> 吴忠市xxx公司
+										</div>
+									</div>
+									<div class="map-ico-wzs">
+										<img src="img/grid.png" />
+										<div class="kuang">
+											<img src="img/box11_01.png" /> 吴忠市xxx公司
+										</div>
+									</div>
+									<img src="img/s-map.png" / class="s-img">
+								</div>
+								<!--特色企业-->
+
+								<div class="Dt_right Dt_right4">
+									<ul>
+										<li class="col">特色企业</li>
+										<li>政策法规</li>
+									</ul>
+									<div class="neirong neirong4" style="display: block;">
+										<p>· 蔬菜零售市场每个环节需要采集哪些...&nbsp; <span> 2017-7-26</span></p>
+										<p>· 我在家家悦超市49门店买到的商品...&nbsp; <span> 2017-7-26</span></p>
+										<p>· 肉类批发的每个环节需要采集哪...&nbsp; <span> 2017-7-26</span></p>
+										<p>· 肉类批发的每个环节需要采集哪...&nbsp; <span> 2017-7-26</span></p>
+										<p>· 肉类批发的每个环节需要采集哪...&nbsp; <span> 2017-7-26</span></p>
+										<p>· 肉类批发的每个环节需要采集哪...&nbsp; <span> 2017-7-26</span></p>
+										<p>· 肉类批发的每个环节需要采集哪...&nbsp; <span> 2017-7-26</span></p>
+										<p>· 肉类批发的每个环节需要采集哪...&nbsp; <span> 2017-7-26</span></p>
+										<p>· 肉类批发的每个环节需要采集哪...&nbsp; <span> 2017-7-26</span></p>
+										<p>· 肉类批发的每个环节需要采集哪...&nbsp; <span> 2017-7-26</span></p>
+										<p>· 肉类批发的每个环节需要采集哪...&nbsp; <span> 2017-7-26</span></p>
+									</div>
+									<div class="neirong neirong4">
+										<p> · 肉类批发的每个环节需要采集哪 ...&nbsp; <span> 2017-7-26</span></p>
+										<p> · 肉类批发的每个环节需要采集哪 ...&nbsp; <span> 2017-7-26</span></p>
+										<p> · 肉类批发的每个环节需要采集哪 ...&nbsp; <span> 2017-7-26</span></p>
+										<p> · 肉类批发的每个环节需要采集哪 ...&nbsp; <span> 2017-7-26</span></p>
+										<p> · 肉类批发的每个环节需要采集哪 ...&nbsp; <span> 2017-7-26</span></p>
+										<p> · 肉类批发的每个环节需要采集哪 ...&nbsp; <span> 2017-7-26</span></p>
+										<p> · 肉类批发的每个环节需要采集哪 ...&nbsp; <span> 2017-7-26</span></p>
+										<p> · 肉类批发的每个环节需要采集哪 ...&nbsp; <span> 2017-7-26</span></p>
+										<p> · 肉类批发的每个环节需要采集哪 ...&nbsp; <span> 2017-7-26</span></p>
+										<p> · 肉类批发的每个环节需要采集哪 ...&nbsp; <span> 2017-7-26</span></p>
+										<p> · 肉类批发的每个环节需要采集哪 ...&nbsp; <span> 2017-7-26</span></p>
+									</div>
+								</div>
+							</div>
+
+						</div>
+						<div class="P_s">
+							<div class="P_sl">
+								<p class="cs">评审<span style="color: #c8000b;">情况</span></p>
+								<div class="xian1">
+									<div class="xian1_d"></div>
+								</div>
+								<div class="Dt_left1">
+									<div class="zi">
+										<div class="pp"></div>
+										<div class="pp1">通过企业数</div>
+										<div class="pp2"></div>
+										<div class="pp3">申报企业数</div>
+									</div>
+									<div class="xiao">
+
+										<div class="container-jdt">
+											<section id="random">
+												<article>
+													<div class="number-pb">
+														<div class="number-pb-shown"></div>
+														<div class="number-pb-num">0%</div>
+													</div>
+												</article>
+											</section>
+										</div>
+
+									</div>
+									<div class="Ps">
+										<p>
+											<a href="">· 蔬菜零售市场每个环节需要采集哪些...<span>2017-7-26</span></a>
+										</p>
+										<p>
+											<a href="">· 蔬菜零售市场每个环节需要采集哪些...<span>2017-7-26</span></a>
+										</p>
+										<p>
+											<a href="">· 蔬菜零售市场每个环节需要采集哪些...<span>2017-7-26</span></a>
+										</p>
+										<p>
+											<a href="">· 蔬菜零售市场每个环节需要采集哪些...<span>2017-7-26</span></a>
+										</p>
+										<p>
+											<a href="">· 蔬菜零售市场每个环节需要采集哪些...<span>2017-7-26</span></a>
+										</p>
+										<p>
+											<a href="">· 蔬菜零售市场每个环节需要采集哪些...<span>2017-7-26</span></a>
+										</p>
+										<p>
+											<a href="">· 蔬菜零售市场每个环节需要采集哪些...<span>2017-7-26</span></a>
+										</p>
+										<p>
+											<a href="">· 蔬菜零售市场每个环节需要采集哪些...<span>2017-7-26</span></a>
+										</p>
+										<p>
+											<a href="">· 蔬菜零售市场每个环节需要采集哪些...<span>2017-7-26</span></a>
+										</p>
+									</div>
+
+								</div>
+
+							</div>
+
+						</div>
+
+					</div>
+					<div class="nav-zhuti tab-body">
+						<div class="nav-cszt">
+							<div class="nav_top">
+								<p class="cs">城市<span style="color: #c8000b;">概况</span>
+								</p>
+								<a href="" id="gd">更多 >></a>
+							</div>
+							<div class="xian">
+								<div class="xian_d"></div>
+							</div>
+							<!--地图-->
+							<div class="Dt">
+								<div class="Dt_left-5">
+									<div class="map-ico-zws">
+										<img src="img/grid.png" />
+										<div class="kuang">
+											<img src="img/box11_01.png" /> 中卫市xxx公司
+										</div>
+									</div>
+									<div class="map-ico-zws">
+										<img src="img/grid.png" />
+										<div class="kuang">
+											<img src="img/box11_01.png" /> 中卫市xxx公司
+										</div>
+									</div>
+									<img src="img/s-map.png" / class="s-img">
+								</div>
+								<!--特色企业-->
+
+								<div class="Dt_right Dt_right5">
+									<ul>
+										<li class="col">特色企业</li>
+										<li>政策法规</li>
+									</ul>
+									<div class="neirong neirong5" style="display: block;">
+										<p>· 蔬菜零售市场每个环节需要采集哪些...&nbsp; <span> 2017-7-26</span></p>
+										<p>· 我在家家悦超市49门店买到的商品...&nbsp; <span> 2017-7-26</span></p>
+										<p>· 肉类批发的每个环节需要采集哪...&nbsp; <span> 2017-7-26</span></p>
+										<p>· 肉类批发的每个环节需要采集哪...&nbsp; <span> 2017-7-26</span></p>
+										<p>· 肉类批发的每个环节需要采集哪...&nbsp; <span> 2017-7-26</span></p>
+										<p>· 肉类批发的每个环节需要采集哪...&nbsp; <span> 2017-7-26</span></p>
+										<p>· 肉类批发的每个环节需要采集哪...&nbsp; <span> 2017-7-26</span></p>
+										<p>· 肉类批发的每个环节需要采集哪...&nbsp; <span> 2017-7-26</span></p>
+										<p>· 肉类批发的每个环节需要采集哪...&nbsp; <span> 2017-7-26</span></p>
+										<p>· 肉类批发的每个环节需要采集哪...&nbsp; <span> 2017-7-26</span></p>
+										<p>· 肉类批发的每个环节需要采集哪...&nbsp; <span> 2017-7-26</span></p>
+									</div>
+									<div class="neirong neirong5">
+										<p> · 肉类批发的每个环节需要采集哪 ...&nbsp; <span> 2017-7-26</span></p>
+										<p> · 肉类批发的每个环节需要采集哪 ...&nbsp; <span> 2017-7-26</span></p>
+										<p> · 肉类批发的每个环节需要采集哪 ...&nbsp; <span> 2017-7-26</span></p>
+										<p> · 肉类批发的每个环节需要采集哪 ...&nbsp; <span> 2017-7-26</span></p>
+										<p> · 肉类批发的每个环节需要采集哪 ...&nbsp; <span> 2017-7-26</span></p>
+										<p> · 肉类批发的每个环节需要采集哪 ...&nbsp; <span> 2017-7-26</span></p>
+										<p> · 肉类批发的每个环节需要采集哪 ...&nbsp; <span> 2017-7-26</span></p>
+										<p> · 肉类批发的每个环节需要采集哪 ...&nbsp; <span> 2017-7-26</span></p>
+										<p> · 肉类批发的每个环节需要采集哪 ...&nbsp; <span> 2017-7-26</span></p>
+										<p> · 肉类批发的每个环节需要采集哪 ...&nbsp; <span> 2017-7-26</span></p>
+										<p> · 肉类批发的每个环节需要采集哪 ...&nbsp; <span> 2017-7-26</span></p>
+									</div>
+								</div>
+							</div>
+
+						</div>
+
+						<div class="P_s">
+							<div class="P_sl">
+								<p class="cs">评审<span style="color: #c8000b;">情况</span></p>
+								<div class="xian1">
+									<div class="xian1_d"></div>
+								</div>
+								<div class="Dt_left1">
+									<div class="zi">
+										<div class="pp"></div>
+										<div class="pp1">通过企业数</div>
+										<div class="pp2"></div>
+										<div class="pp3">申报企业数</div>
+									</div>
+									<div class="xiao">
+
+										<div class="container-jdt">
+											<section id="random">
+												<article>
+													<div class="number-pb">
+														<div class="number-pb-shown"></div>
+														<div class="number-pb-num">0%</div>
+													</div>
+												</article>
+											</section>
+										</div>
+
+									</div>
+									<div class="Ps">
+										<p>
+											<a href="">· 蔬菜零售市场每个环节需要采集哪些...<span>2017-7-26</span></a>
+										</p>
+										<p>
+											<a href="">· 蔬菜零售市场每个环节需要采集哪些...<span>2017-7-26</span></a>
+										</p>
+										<p>
+											<a href="">· 蔬菜零售市场每个环节需要采集哪些...<span>2017-7-26</span></a>
+										</p>
+										<p>
+											<a href="">· 蔬菜零售市场每个环节需要采集哪些...<span>2017-7-26</span></a>
+										</p>
+										<p>
+											<a href="">· 蔬菜零售市场每个环节需要采集哪些...<span>2017-7-26</span></a>
+										</p>
+										<p>
+											<a href="">· 蔬菜零售市场每个环节需要采集哪些...<span>2017-7-26</span></a>
+										</p>
+										<p>
+											<a href="">· 蔬菜零售市场每个环节需要采集哪些...<span>2017-7-26</span></a>
+										</p>
+										<p>
+											<a href="">· 蔬菜零售市场每个环节需要采集哪些...<span>2017-7-26</span></a>
+										</p>
+										<p>
+											<a href="">· 蔬菜零售市场每个环节需要采集哪些...<span>2017-7-26</span></a>
+										</p>
+									</div>
+
+								</div>
+
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+				<!--评审-->
+
+			</div>
+
+		</div>
+		<!--底部-->
+		<div class="footer">
+
+			<span>版权所有：宁夏回族自治区商务厅| 技术支持：中商流通生产力促进中心有限公司</span>
+		</div>
+	</body>
+	<script src="js/topred.js" type="text/javascript" charset="utf-8"></script>
+	<script>
+		//		进度条的
+		$(function() {
+
+			function randomPercentage() {
+
+				return Math.floor(Math.random() * 100);
+
+			}
+
+			var loopBars = $('#random .number-pb').NumberProgressBar().each(function() {
+
+				$(this).reach(randomPercentage());
+
+			});
+
+			window.setInterval(function() {
+
+				loopBars.each(function() {
+
+					$(this).reach(randomPercentage());
+
+				})
+
+			}, 12000);
+
+			var num = randomPercentage();
+
+			var title = $('#sample-pb .title').text('@' + num);
+
+			var controlBar = $('#sample-pb .number-pb').NumberProgressBar({
+
+				duration: 12000,
+
+				percentage: num
+
+			});
+
+			var $controls = $('#sample-pb .control');
+
+			$controls.filter('.empty').click(function() {
+				animate(0);
+			})
+
+			$controls.filter('.minus-10').click(function() {
+				animate(num - 10);
+			})
+
+			$controls.filter('.minus-30').click(function() {
+				animate(num - 30);
+			})
+
+			$controls.filter('.plus-10 ').click(function() {
+				animate(num + 10);
+			})
+
+			$controls.filter('.plus-30 ').click(function() {
+				animate(num + 30);
+			})
+
+			$controls.filter('.full').click(function() {
+				animate(100);
+			})
+
+			function animate(val) {
+
+				if(val < 0) {
+
+					num = 0;
+
+				} else if(val > 100) {
+
+					num = 100;
+
+				} else {
+
+					num = val
+
+				}
+
+				controlBar.reach(num);
+
+				title.text('@' + num);
+
+			}
+
+		});
+
+//				选项卡
+				$(function() {
+					var i = 0;
+					$(".Dt_right1 ul li").click(function() {
+						i = $(this).index();
+						$(".neirong1").hide().eq(i).show();
+						$(".Dt_right1 ul li").removeClass("col").eq(i).addClass("col");
+					})
+				})
+				$(function() {
+					var i = 0;
+					$(".Dt_right2 ul li").click(function() {
+						i = $(this).index();
+						$(".neirong2").hide().eq(i).show();
+						$(".Dt_right2 ul li").removeClass("col").eq(i).addClass("col");
+					})
+				})
+				$(function() {
+					var i = 0;
+					$(".Dt_right3 ul li").click(function() {
+						i = $(this).index();
+						$(".neirong3").hide().eq(i).show();
+						$(".Dt_right3 ul li").removeClass("col").eq(i).addClass("col");
+					})
+				})
+				$(function() {
+					var i = 0;
+					$(".Dt_right4 ul li").click(function() {
+						i = $(this).index();
+						$(".neirong4").hide().eq(i).show();
+						$(".Dt_right4 ul li").removeClass("col").eq(i).addClass("col");
+					})
+				})
+				$(function() {
+					var i = 0;
+					$(".Dt_right5 ul li").click(function() {
+						i = $(this).index();
+						$(".neirong5").hide().eq(i).show();
+						$(".Dt_right5 ul li").removeClass("col").eq(i).addClass("col");
+					})
+				})
+				$(function() {
+					var i = 0;
+					$(".nav-cszt-u li").click(function() {
+						i = $(this).index();
+						$(".nav-zhuti").hide().eq(i).show();
+						$(".nav-cszt-u li").removeClass("col-yc").eq(i).addClass("col-yc");
+					})
+				})
+
+		
+		
+	</script>
+
+</html>
